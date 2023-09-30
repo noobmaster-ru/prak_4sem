@@ -38,11 +38,16 @@ int main() {
     printf(" 12 mod -4 = %d\n", (x1 % x3));
     printf(" 12 mod 11 = %d\n\n", (x1 % x2));
 
+
+
+
     printf(" -4 mod 12 = %d\n", (x3 % x1));
     printf(" -4 mod 11 = %d\n\n", (x3 % x2));
 
     printf(" -3 mod -4 = %d\n",(x4 % x3));
     printf(" -4 mod -3 = %d\n\n",(x3 % x4));
+
+    printf("end of the world");
     return 0;
 
 }
