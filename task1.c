@@ -35,8 +35,6 @@ int main() {
     printf(" 12 mod 11 = %d\n",(x1 % x2 ));
     printf(" 11 mod 12 = %d\n\n",(x2 % x1 ));
 
-
-
     printf(" 12 mod -4 = %d\n", (x1 % x3));
     printf(" 12 mod 11 = %d\n\n", (x1 % x2));
 
