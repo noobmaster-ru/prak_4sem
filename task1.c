@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("task 1.1\n");
+    printf("task=dsjfngjktask 1.1\n");
     printf("%lu %s \n",sizeof(short)," - short");
     printf("%lu %s \n",sizeof(int)," - int");
     printf("%lu %s \n",sizeof(long)," - long");
@@ -36,6 +36,7 @@ int main() {
     printf(" 11 mod 12 = %d\n\n",(x2 % x1 ));
 
     printf(" 12 mod -4 = %d\n", (x1 % x3));
+
     printf(" 12 mod 11 = %d\n\n", (x1 % x2));
 
 
