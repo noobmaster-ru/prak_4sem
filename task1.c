@@ -9,6 +9,7 @@ int main() {
     printf("%lu %s \n",sizeof(double)," - double");
     printf("%lu %s \n\n",sizeof(long double)," - long double");
 
+
     printf("task 1.2\n");
     char c = -1;
     if (c < 0) {
@@ -42,13 +43,14 @@ int main() {
 
 
 
+
+
     printf(" -4 mod 12 = %d\n", (x3 % x1));
     printf(" -4 mod 11 = %d\n\n", (x3 % x2));
 
     printf(" -3 mod -4 = %d\n",(x4 % x3));
     printf(" -4 mod -3 = %d\n\n",(x3 % x4));
 
-    
     return 0;
 
 }
