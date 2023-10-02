@@ -19,6 +19,8 @@ int main() {
         printf("%s","unsigned\n\n");
     }
 
+
+
     printf("task1.6\n");
     int x;
     int y = 3;
@@ -47,7 +49,7 @@ int main() {
 
     printf(" -3 mod -4 = %d\n",(x4 % x3));
     printf(" -4 mod -3 = %d\n\n",(x3 % x4));
-
+    printf("\n");
     return 0;
 
 }
