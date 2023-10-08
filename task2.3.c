@@ -52,7 +52,9 @@ int main()
     printf("Enter numbers: ");
     while (scanf("%ld",&a) != EOF) 
     {
+        printf(" iterative: ");
         fib1(a);
+        printf(" recursion: ");
         printf(" %ld's number of Fibonacci = %d\n\n",a,fib2(a));
         // fib1 faster than fib2
     }
