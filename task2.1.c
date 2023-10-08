@@ -4,7 +4,9 @@ int main() {
     printf("task2.1\n");
     double e,x,x0 = 1.0,x_i,x_i1;
 
+    printf("Enter e = ");
     scanf("%la",&e);
+    printf("Enter X's:\n");
     while (scanf("%la",&x) != EOF) {
         x0 = 1;
         x_i = x0;
