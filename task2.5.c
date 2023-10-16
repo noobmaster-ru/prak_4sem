@@ -109,7 +109,7 @@ int main() {
 
 
         // list after deletes
-        printf("\n List after deletes: ");
+        printf("\n List after  deletes: ");
         p = lst;
         while (p != NULL){
             printf("%s ",p->elem);
