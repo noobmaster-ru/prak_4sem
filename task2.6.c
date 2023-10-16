@@ -79,9 +79,10 @@ tree delete_elem(tree t, elemtype n){
             free(t);
             return t1;
         }
-         tree t1 = minValueNode(t->right);
-         t->elem = t1->elem;
-         t->right = delete_elem(t->right,t1->elem);
+        // node with two childs
+        tree t1 = minValueNode(t->right);
+        t->elem = t1->elem;
+        t->right = delete_elem(t->right,t1->elem);
     }
     return t;
 }
