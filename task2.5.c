@@ -30,7 +30,7 @@ int main() {
     while (scanf("%s", str) != EOF){
         if (lst == NULL) {
             lst = (link) malloc(sizeof(node));
-            s = (char *)malloc(strlen(str) * sizeof(char));
+            s = (char *)malloc(strlen(str) * sizeof(char) + 1) ;
             strcpy(s, str);
 
             lst ->elem = s;
@@ -38,7 +38,7 @@ int main() {
             k++;
         }
         else {
-            s = (char *)malloc(strlen(str) * sizeof(char));
+            s = (char *)malloc(strlen(str) * sizeof(char) + 1);
             strcpy(s, str);
             lst1->next = (link)malloc(sizeof(node));
 
@@ -116,6 +116,13 @@ int main() {
             p = p->next;
         }
         printf("\n");
-    }
+
+        // delete list
+        while (lst != NULL){
+            p1 = lst;
+            lst = lst->next;
+            free(p1);
+        }
+    } 
     return 0;
 }
