@@ -120,8 +120,6 @@ int main() {
             printf("\n");
         }
         if (s == '?'){
-            // printf("%c\n",s);
-            // printf("%d\n",num);
             if (find(t,num) == 0){
                 printf("%d no\n",num);   // elem no in tree 
             }
