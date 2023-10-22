@@ -102,7 +102,13 @@ int find(tree t, elemtype n){
 }
 
 
+void delete_tree(tree t){
+    if (t == NULL) return;
 
+    delete_tree(t->left);
+    delete_tree(t->right);
+    free(t);
+}
 
 int main() {
     char s;
@@ -110,8 +116,9 @@ int main() {
 
     printf("Enter numbers:\n");
     tree t;
-    t = (tree)malloc(sizeof(tnode));
     t = NULL;
+
+    //t = (tree)malloc(sizeof(tnode));
     while (scanf(" %c%d", &s, &num) != EOF){
         if (s == '+') {
             t = append(t,num);
@@ -138,5 +145,6 @@ int main() {
             printf("\n");
         }
     }
+    delete_tree(t);
     return 0;
 }
