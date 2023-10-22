@@ -123,6 +123,7 @@ int main() {
         while (lst != NULL){
             p1 = lst;
             lst = lst->next;
+            free(p1->elem);
             free(p1);
         }
     } 
