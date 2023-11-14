@@ -1,8 +1,8 @@
-functions.o:
-	gcc -c functions.c -o functions.o 
+main.o: main.c
+	gcc -c -o main.o main.c
 
-main.o:
-	gcc -c main.c -o main.o
+functions.o: functions.c
+	gcc -c -o functions.o functions.c
 
-all: functions.o main.o
-	gcc -o exec functions.o main.o
+all: main.c functions.c
+	gcc	main.c functions.c

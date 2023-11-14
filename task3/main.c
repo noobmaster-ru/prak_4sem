@@ -17,11 +17,13 @@ int main() {
     vertex V=Start;
     c = getchar();
     null_list();
+    int kol = 0;
     while(1 == 1 ){ 
         switch(V){
             case Start:
                 if (c == EOF){
                     termlist();
+                    printf(" kol = %d\n",kol);
                     printf("    Before sorting  \n");
                     printlist();
                     V = Stop;
@@ -66,6 +68,7 @@ int main() {
                 }
                 else{
                     V=Start;
+                    kol++;
                     addword();
                 }
             break;
@@ -78,12 +81,14 @@ int main() {
                 }
                 else {
                     V=Start;
+                    kol++;
                     addword();
                 }
             break;
 
             case Greater2:
                 V=Start;
+                kol++;
                 addword();
             break;
 
@@ -95,12 +100,14 @@ int main() {
                 }
                 else {
                     V=Start;
+                    kol++;
                     addword();
                 }
             break;
 
             case Or2:
                 V=Start;
+                kol++;
                 addword();
             break;
             
@@ -113,32 +120,38 @@ int main() {
                 }
                 else {
                     V=Start;
+                    kol++;
                     addword();
                 }
             break;
 
             case Umpersand2:
                 V=Start;
+                kol++;
                 addword();
             break;
 
             case Dott:
                 V = Start;
+                kol++;
                 addword();
             break;
 
             case Less:
                 V = Start;
+                kol++;
                 addword();
             break;
 
             case Left:
                 V = Start;
+                kol++;
                 addword();
             break;  
 
             case Right:
                 V = Start;
+                kol++;
                 addword();
             break;
 
