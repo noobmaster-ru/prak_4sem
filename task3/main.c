@@ -24,7 +24,7 @@ int main() {
                 if (c == EOF){
                     termlist();
                     printf(" kol = %d\n",kol);
-                    printf("    Before sorting  \n");
+                    printf("    Before sorting:  \n");
                     printlist();
                     V = Stop;
                 }
@@ -157,7 +157,7 @@ int main() {
 
             case Stop:
                 sortinglist();
-                printf("    After sorting    \n");
+                printf("    After sorting:   \n");
                 printlist();
                 clearlist();
                 exit(0);
