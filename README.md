@@ -1,45 +1,112 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+task2:
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+    task2_1:
+    Вычислить по методу Ньютона корень квадратный из числа x,
+    находящимся во входном потоке (использовался цикл, в котором 
+    считывался каждый элемент последовательности, который
+    впоследствии обрабатывался методом Ньютона для вычисления корня
+    квадратного)
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+    task2_2_1:
+    По заданной последовательности чисел, вычислить многочлен
+    n-ой степени по схеме Горнера (для данной задачи использовался
+    аналогичный task2_1 алгоритм, только вычисления производились
+    по схеме Горнера)
 
----
+    task2_2_2:
+    По заданной последовательности чисел, вычислить многочлен
+    n-ой степени по схеме Горнера, а также посчитать производную 
+    (задача была решена в task2_2_1.c, результатом является переменная der)
 
-## Edit a file
+    task2_2_3:
+    По заданной последовательности чисел, вычислить многочлен
+    n-ой степени по схеме Горнера, а также посчитать интеграл
+    (использовался незамысловатый итеративный алгоритм
+    sum = sum*x + a/(n+1), где а - i-й коэффициент посл-ти, 
+    n - степень многочлена для i-й итерации, sum - итоговая сумма, 
+    x - точка)
+	
+    task2_3:
+    Описать рекурсивную и итеративную версии функции i-го
+    члена Фибоначчи (функция FibRec, зависящая от i-го эл-та посл-ти
+    считает i-е число Фибоначчи рекурсивно, а функция Fib, зависящая
+    от итогового эл-та посл-ти, считает i-е число Фибоначчи итеративно)
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+    task2_4:
+    Описать функцию, преобразующую вещественную константу, 
+    заданную строкой, в тип double (осуществлена единственная функция
+    str2double, на вход которой подается массив типа char, которая 
+    обрабатывает i-й элемент массива через оператор switch)
+	
+	task2_5:
+    Описать тип "список слов"; написать программу, которая
+    вводит строку из непустых слов и строит список из этих слов;
+    преобразовать список по следующему правилу: удалить все
+    слова из списка, совподающие с последним
+    (void print(list lst) - функция, печатающая lst типа list;
+    list mk_list() - функция, создающая и заполняющая список из stdin;
+    list last_elem(list lst) - функция, возвращающая последнее звено;
+    list handle_list(list lst) - функция, удаляющая звенья, совпадающие с последним;
+    void del(list lst) - функция, удаляющая список с последующим освобождением памяти)
+    
+	task2_6:
+    Описать тип "дерево поиска" с неотрицательными целыми
+    ключами; написать программу, которая вводит эл-ты 3-х
+    видов:
+    +<num>
+    -<num>
+    ?<num>
+    Число с плюсом добавляется в список, если его еще нет
+    Число с минусом удаляется из списка, если оно в нем есть
+    Число со знаком вопроса ищет элемент и отвечает "yes"
+    или "no"
+    (tree add_to_tree(tree t, elemtype i) - функция, добавляющая элемент i в дерево поиска t, если его нет;
+    tree tDelElem(tree t, elemtype i) - функция, удаляющая из дерева t элемент i, если он там есть;
+    void isnum(tree t, elemtype i) - функция, которая ищет элемент i в дереве t, печатает i и yes/no;
+    void tprint(tree t) - функция, печатающая дерево t слева направо;
+    void del(tree t) - функция, удаляющая дерево t с освобождением памяти;)
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+    task2_7:
+    К написанной "программе-калькулятор" добавить функции
+    умножжения, вычитания и возведения в степень
+    (void getlex() - выделяет из входного потока текущую лексему;
+    void expr() - распознает выражение и вычисляет его значение;
+    void add() - распознает слагаемое и вычисляет его значение;
+    void mult() - распознает множитель и вычисляет его значение;
+    void error() - сообщает об ошибке в выражении и передает управление в начало функции main(в точку begin))
 
----
+    Для того, чтобы скомпилировать программы выше и запустить их, 
+    достаточно написать следующие команды:
+    gcc <programm_name> -o <programm_name>
+    ./<programm_name>
+	
+task3:
 
-## Create a file
+    Описать программу, которая, пока не получен конец файла, выполняет 
+    в цикле следующие действия:
+        1) cчитывает из stdin очередную строку,
+        2) преобразует ее в последовательность (список) слов,
+        3) выводит в stdout полученную последовательность слов в исходном порядке,
+        4) выводит слова последовательности в лексикографическом порядке.
+    При выводе в первой строке напечатать длину списка, в каждой последующей – очередной элемент списка.
+    Задача была решена путем разбития на 2 подпрограммы: functions.c(в 
+    которой описаны все функции, требующиеся для решения задачи) и
+    main.c(обрабатывающая stdin)
 
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+    functions.c состоит из следующих функций:
+        - void clearlist() - удаляет все звенья списка с освобождением памяти
+        - void null_list() - задает начальные установки для списка
+        - void termlist() - добавляет в список последний "NULL" элемент
+        - void nullbuf() - очищает буфер и задает начальные установки
+        - void addsym() - добавляет очередной символ в буфер
+        - void addword() - добавляет слово из буфера в список
+        - void printlist() - печатает список
+        - int symset(int c) - определяет специальный символ
+        - void sort() - сортирует список в лексикографическом порядке
+    
+    Для того, чтобы скомпилировать программу и запустить ее была
+    использована утилита make, для этого был создан файл Makefile,
+    расположенный в директории с программой, следующие команды
+    компилирую и запускают порграмму соответственно:
+    make all
+	./a.out
