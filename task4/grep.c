@@ -118,6 +118,7 @@ int main(int argc, char* argv[]){
     else{
         printf("error");
     }
+    
     free(substring);
     return 0;
 }

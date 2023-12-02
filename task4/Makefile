@@ -10,3 +10,4 @@ ls:
 	gcc -o ls ls.c
 mv:
 	gcc -o mv mv.c
+	
