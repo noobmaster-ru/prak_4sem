@@ -119,5 +119,6 @@ int main(int argc, char* argv[]){
         printf("error");
     }
     free(substring);
+    
     return 0;
 }
