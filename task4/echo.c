@@ -183,6 +183,5 @@ int main(int argc,char *argv[]){
     else if (flag_small_e == 1){
         Print_e(len_of_descriptors,argc,argv,flag_n);
     }
-    
     return 0;
 }

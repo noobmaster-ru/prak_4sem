@@ -11,6 +11,5 @@ int main(){
         dir = (char*)realloc(dir,n);
     }
     printf("%s\n", dir);
-    return 0;
-    
+    return 0; 
 }
