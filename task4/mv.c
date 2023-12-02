@@ -180,7 +180,6 @@ int main(int argc, char* argv[]){
             break;
         }
     }
-    
     closedir(dh);
     return 0;
 }

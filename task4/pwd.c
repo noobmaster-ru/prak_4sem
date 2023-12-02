@@ -10,7 +10,6 @@ int main(){
         n++;
         dir = (char*)realloc(dir,n);
     }
-    
     printf("%s\n", dir);
     return 0; 
 }
