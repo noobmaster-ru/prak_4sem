@@ -13,6 +13,7 @@
 
 #define SIZE 256
 
+
 void end_of_work(int sig){
     printf("\n");
     if (sig == SIGINT){

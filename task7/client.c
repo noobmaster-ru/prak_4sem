@@ -12,6 +12,7 @@
 extern int errno;
 
 
+
 #define SIZE 256
 
 void end(){
