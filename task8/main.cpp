@@ -11,6 +11,7 @@ int main(){
     array[3] = 1.234123;
 
 
+
     cout << endl;
     cout << "null matrix:" << endl;
     matrix m;

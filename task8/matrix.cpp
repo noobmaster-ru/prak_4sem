@@ -6,6 +6,7 @@ using namespace std;
 
 
 
+
 matrix::matrix(){ // по умолчанию создается пустая матрица
     n_rows = 0;
     m_cols = 0;
