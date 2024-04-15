@@ -3,3 +3,4 @@ test:
 	./test
 clean:
 	rm -f test header
+	
